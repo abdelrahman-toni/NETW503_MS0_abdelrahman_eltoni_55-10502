@@ -2,7 +2,7 @@ import socket
 import sys
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 port=5666
-server_socket.bind(('127.0.0.1',80))
+server_socket.bind(('127.0.0.1',port))
 server_socket.listen(5666)
 sentence=''
 while True :
